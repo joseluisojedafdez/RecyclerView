@@ -9,6 +9,8 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.i4bchile.reciclerview.modelo.Postre;
+import com.i4bchile.reciclerview.vistas.Detalle;
+import com.i4bchile.reciclerview.vistas.PostresAdapter;
 
 public class MainActivity extends AppCompatActivity implements PostresAdapter.OnItemClickListener {
 

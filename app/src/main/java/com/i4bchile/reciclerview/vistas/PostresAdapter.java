@@ -1,4 +1,4 @@
-package com.i4bchile.reciclerview;
+package com.i4bchile.reciclerview.vistas;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,9 +8,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.i4bchile.reciclerview.R;
 import com.i4bchile.reciclerview.modelo.Postre;
 
 import java.util.ArrayList;

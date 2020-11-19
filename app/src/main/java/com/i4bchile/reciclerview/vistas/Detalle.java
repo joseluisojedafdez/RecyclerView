@@ -1,4 +1,4 @@
-package com.i4bchile.reciclerview;
+package com.i4bchile.reciclerview.vistas;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+
+import com.i4bchile.reciclerview.R;
 
 /**
  * A simple {@link Fragment} subclass.
