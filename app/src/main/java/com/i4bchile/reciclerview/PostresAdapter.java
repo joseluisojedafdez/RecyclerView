@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.i4bchile.reciclerview.modelo.Postre;
@@ -69,7 +70,10 @@ public class PostresAdapter extends RecyclerView.Adapter<PostresAdapter.ViewHold
         public void onClick(View v) {
             int position = getAdapterPosition();
             Postre postre = listaDePostres.get(position);
+
             listener.onClick(postre);
+
+
         }
     }
 
@@ -79,6 +83,7 @@ public class PostresAdapter extends RecyclerView.Adapter<PostresAdapter.ViewHold
         Postre postre = listaDePostres.get(position);
         holder.setNombre(postre.getNombre());
         holder.setImagen(postre.getImage());
+
     }
 
     @Override
