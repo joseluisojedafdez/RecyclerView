@@ -1,15 +1,14 @@
 package com.i4bchile.reciclerview;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,7 +18,7 @@ import android.widget.TextView;
 public class Detalle extends Fragment {
 
 
-    private static final String TAG ="En fragmento" ;
+    private static final String TAG = "En fragmento";
     private String detalleNombre;
     private String detalleDescripcion;
     private int detalleImagen;
@@ -31,12 +30,12 @@ public class Detalle extends Fragment {
     }
 
 
-    public static Detalle newInstance(String pNombre, String pDescripcion,int pImagen) {
+    public static Detalle newInstance(String pNombre, String pDescripcion, int pImagen) {
         Detalle fragment = new Detalle();
         Bundle args = new Bundle();
         args.putString("Nombre", pNombre);
         args.putString("Descripcion", pDescripcion);
-        args.putInt("Imagen",pImagen);
+        args.putInt("Imagen", pImagen);
         fragment.setArguments(args);
         return fragment;
     }
@@ -50,8 +49,7 @@ public class Detalle extends Fragment {
             Log.e(TAG, "fragmento on create ");
             detalleNombre = getArguments().getString("Nombre");
             detalleDescripcion = getArguments().getString("Descripcion");
-            detalleImagen=getArguments().getInt("Imagen");
-
+            detalleImagen = getArguments().getInt("Imagen");
 
 
         }
@@ -63,13 +61,13 @@ public class Detalle extends Fragment {
 
         Log.e(TAG, "fragmento on create view ");
 
-                view=inflater.inflate(R.layout.fragment_detalle, container, false);
-                loadData();
-                return view;
+        view = inflater.inflate(R.layout.fragment_detalle, container, false);
+        loadData();
+        return view;
     }
 
 
-    public void loadData(){
+    public void loadData() {
         Log.e(TAG, "load data ");
         ((TextView) view.findViewById(R.id.tx_nombreDetalle)).setText(detalleNombre);
         ((TextView) view.findViewById(R.id.tx_descripcion_degtalle)).setText(detalleDescripcion);

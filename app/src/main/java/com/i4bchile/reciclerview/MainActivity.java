@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements PostresAdapter.On
         rvlistaPostres = findViewById(R.id.rv_Lista);
         rvlistaPostres.setAdapter(mAdapter);
         GridLayoutManager layoutGrid2;
-        layoutGrid2 = new GridLayoutManager(this, 1, GridLayoutManager.HORIZONTAL, false);
+        layoutGrid2 = new GridLayoutManager(this, 2, GridLayoutManager.HORIZONTAL, false);
         rvlistaPostres.setLayoutManager(layoutGrid2);
 
 
